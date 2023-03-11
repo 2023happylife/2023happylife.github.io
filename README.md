@@ -1,9 +1,6 @@
 <!doctype html>
 <html lang="EN">
-    <title></title>
-  </head>
-  <body>
-    <h1>발효식품 공방 효담</h1>
+       <h1>발효식품 공방 효담</h1>
 <form>
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname"><br>
