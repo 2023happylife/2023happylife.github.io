@@ -3,8 +3,8 @@
 <head>
 </head>
 <body>
- <h1>발효식품 공방 효담</h1>
- <p>This is a paragraph.</p>
+ <h1>쌀누룩 발효식품 공방 효담</h1>
+ <p>쌀누룩은 발효식품으로 장기능 개선과 피부건강에 효과적인 제품이니다.</p>
 
 <form>
   <label for="fname">First name:</label><br>
