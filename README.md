@@ -42,35 +42,54 @@
   <li>제품 5</li>
 </ul>
 
-<p>보여줄 제품 개수:
-  <select id="product-count-selector">
-    <option value="5">5개</option>
-    <option value="10">10개</option>
-    <option value="15">15개</option>
-  </select>
-</p>
-
-<p>선택된 제품 개수: <span id="product-count"></span></p>
+<ul id="product-list">
+  <li>
+    <span class="product-name">콤부차</span>
+    <div class="product-controls">
+      <button class="product-count-btn" data-count="1">+1</button>
+      <button class="product-count-btn" data-count="2">+2</button>
+      <span class="product-count">0</span>
+    </div>
+  </li>
+  <li>
+    <span class="product-name">제품 2</span>
+    <div class="product-controls">
+      <button class="product-count-btn" data-count="1">+1</button>
+      <button class="product-count-btn" data-count="2">+2</button>
+      <span class="product-count">0</span>
+    </div>
+  </li>
+  <li>
+    <span class="product-name">제품 3</span>
+    <div class="product-controls">
+      <button class="product-count-btn" data-count="1">+1</button>
+      <button class="product-count-btn" data-count="2">+2</button>
+      <span class="product-count">0</span>
+    </div>
+  </li>
+</ul>
 
 <script>
   // 제품 목록 요소를 가져옵니다.
   const productList = document.getElementById('product-list');
-  // 선택 옵션 요소를 가져옵니다.
-  const productCountSelector = document.getElementById('product-count-selector');
-  // 선택된 제품 개수를 표시할 요소를 가져옵니다.
-  const productCount = document.getElementById('product-count');
 
-  // 선택 옵션 변경 시 이벤트를 처리하는 함수를 작성합니다.
-  function handleProductCountChange() {
-    // 선택된 제품 개수를 계산합니다.
-    const selectedCount = parseInt(productCountSelector.value, 10);
-    // 제품 개수를 계산하여 표시합니다.
-    productCount.textContent = productList.children.length > selectedCount ? selectedCount : productList.children.length;
+  // 버튼 클릭 시 이벤트를 처리하는 함수를 작성합니다.
+  function handleProductCountButtonClick(event) {
+    // 클릭된 버튼 요소를 가져옵니다.
+    const button = event.target;
+    // 클릭된 버튼의 값(증가할 제품 개수)을 가져옵니다.
+    const count = parseInt(button.dataset.count, 10);
+    // 클릭된 버튼의 부모 요소(li)를 가져옵니다.
+    const li = button.closest('li');
+    // 제품 개수를 표시할 요소(span)를 가져옵니다.
+    const countSpan = li.querySelector('.product-count');
+    // 현재 제품 개수를 가져옵니다.
+    let currentCount = parseInt(countSpan.textContent, 10);
+    // 새로운 제품 개수를 계산합니다.
+    const newCount = currentCount + count;
+    // 새로운 제품 개수를 표시합니다.
+    countSpan.textContent = newCount > 0 ? newCount : 0;
   }
 
-  // 선택 옵션 변경 시 이벤트를 처리합니다.
-  productCountSelector.addEventListener('change', handleProductCountChange);
+  // 버튼 클릭 시 이벤트
 
-  // 페이지 로드 시 제품 개수를 초기화합니다.
-  handleProductCountChange();
-</script>
