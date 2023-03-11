@@ -12,7 +12,13 @@
   </head>
   <body>
     <h1>발효식품 공방 효담</h1>
-
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+    
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js" integrity="sha512-F2sCEtBdFX+pGPjCZLBdtlLr7rHbRr+Tgjy9fcM56hMtp0c0yzpEEaZkkbAjLWf0GwFgLyiEs2QyntP9C66W8w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
