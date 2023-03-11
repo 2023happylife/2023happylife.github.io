@@ -1,4 +1,11 @@
-       <h1>발효식품 공방 효담</h1>
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+ <h1>발효식품 공방 효담</h1>
+ <p>This is a paragraph.</p>
+
 <form>
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname"><br>
@@ -23,3 +30,6 @@
   // 제품 개수를 계산하여 표시합니다.
   productCount.textContent = productList.children.length;
 </script>
+
+       </body>
+</html> 
