@@ -1,13 +1,5 @@
 <!doctype html>
 <html lang="EN">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-8XvU0i0U6Z+U+y2uD79zJvU6kojtUkOnEUnvg+UCi9jn4g4D4O+R0FZb/Gc8lzk" crossorigin="anonymous">
-
     <title></title>
   </head>
   <body>
