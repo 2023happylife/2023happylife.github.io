@@ -28,3 +28,6 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-8XvU0i0U
+mkdir my-website
+cd my-website
+git clone https://github.com/2023happylife/2023happylife.github.io.git
