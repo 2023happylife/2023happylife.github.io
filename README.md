@@ -1,4 +1,4 @@
-<!doctype html>
+
 <html lang="EN">
        <h1>발효식품 공방 효담</h1>
 <form>
