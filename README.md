@@ -69,27 +69,29 @@
   </li>
 </ul>
 
+<ul>
+  <li>
+    <span>콤부차</span>
+    <button class="count-btn" data-count="1">+1</button>
+    <button class="count-btn" data-count="2">+2</button>
+    <span class="count">0</span>
+  </li>
+</ul>
+
 <script>
-  // 제품 목록 요소를 가져옵니다.
-  const productList = document.getElementById('product-list');
+  // 버튼 클릭 이벤트 처리
+  const countBtns = document.querySelectorAll('.count-btn');
+  const countSpans = document.querySelectorAll('.count');
+  const productNames = document.querySelectorAll('li span');
+  
+  countBtns.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      const count = parseInt(btn.getAttribute('data-count'));
+      const currentCount = parseInt(countSpans[index].textContent);
+      const newCount = currentCount + count;
+      countSpans[index].textContent = newCount;
+    });
+  });
+</script>
 
-  // 버튼 클릭 시 이벤트를 처리하는 함수를 작성합니다.
-  function handleProductCountButtonClick(event) {
-    // 클릭된 버튼 요소를 가져옵니다.
-    const button = event.target;
-    // 클릭된 버튼의 값(증가할 제품 개수)을 가져옵니다.
-    const count = parseInt(button.dataset.count, 10);
-    // 클릭된 버튼의 부모 요소(li)를 가져옵니다.
-    const li = button.closest('li');
-    // 제품 개수를 표시할 요소(span)를 가져옵니다.
-    const countSpan = li.querySelector('.product-count');
-    // 현재 제품 개수를 가져옵니다.
-    let currentCount = parseInt(countSpan.textContent, 10);
-    // 새로운 제품 개수를 계산합니다.
-    const newCount = currentCount + count;
-    // 새로운 제품 개수를 표시합니다.
-    countSpan.textContent = newCount > 0 ? newCount : 0;
-  }
-
-  // 버튼 클릭 시 이벤트
 
