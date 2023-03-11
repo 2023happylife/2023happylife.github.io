@@ -19,8 +19,8 @@
   <input type="text" id="lname" name="lname">
     </form>
 <ul id="product-list">
-  <li>제품 1</li>
-  <li>제품 2</li>
+  <li>쌀누룩 요거트</li>
+  <li>콤부차</li>
   <li>제품 3</li>
   <li>제품 4</li>
   <li>제품 5</li>
