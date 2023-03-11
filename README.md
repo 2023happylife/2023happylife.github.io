@@ -16,6 +16,7 @@
     <button id="add-to-cart">확인</button>
   </div>
 </div>
+ 
 .container {
   display: flex;
   justify-content: center;
