@@ -31,3 +31,6 @@
 mkdir my-website
 cd my-website
 git clone https://github.com/2023happylife/2023happylife.github.io.git
+git add .
+git commit -m "Initial commit"
+git push origin main
